@@ -3,7 +3,8 @@
 
     .nav-container,
     .menu-items-container,
-    .banner-container {
+    .banner-container,
+    .play-container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -36,12 +37,35 @@
 
     .menu-items-container .follow-button {
         margin-top: 40px;
+        align-items: left;
+    }
+
+    /* play styles */
+    .play-container .play-img {
+        width: 80%;
+        margin-left: 0;
+        padding: 0;
+    }
+    .img-2{
+        /* position: relative; */
+        margin-left: 90%;
+        width: 20px;
+        height: 25px;
+    }
+
+    .play-container .play-img .img2 {
+        position: static;
+        /* width: 20px;
+        height: 25px; */
+        bottom: 20px;
+        margin-left: 80%;
     }
 
     /* banner styles */
-    .banner-container{
+    .banner-container {
         flex-direction: column-reverse;
     }
+
     .banner-text,
     .banner-img {
         width: 100%;
@@ -56,18 +80,20 @@
     .banner-button {
         padding-top: 20px;
     }
-    .button-root-container{
+
+    .button-root-container {
         display: grid;
         grid-template-columns: repeat(3, 3fr);
     }
+
     .button-container {
         margin: 0 auto;
         background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
         display: grid;
         /* grid-template-columns: repeat(5, 1fr); */
-   
+
         gap: 5px;
-   
+
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -76,15 +102,17 @@
         margin-right: 10%;
         /* border: 1px solid black; */
         justify-items: center;
-   
+
         /* justify-content: space-evenly; */
         justify-items: center;
         align-content: space-evenly;
-   
+
     }
+
     .button-container-1 {
         grid-template-columns: repeat(3, 1fr);
     }
+
     .button-container-2 {
         display: none;
         grid-template-columns: repeat(4, 1fr);
@@ -128,9 +156,10 @@
     }
 
     /* banner styles */
-    .banner-container{
+    .banner-container {
         flex-direction: column-reverse;
     }
+
     .banner-text,
     .banner-img {
         width: 100%;
